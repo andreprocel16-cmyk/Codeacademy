@@ -7,23 +7,107 @@
     background-color: rgb(232, 224, 252);
 }
 
-.parent {
-    /* margin: 80px 170px; */
+
+/* .parent {
     display: flex;
-    height: 550px;
     justify-content: center;
     align-items: center;
-  
-    
-    
+    min-height: 390px;
+    width: 100%;
+} */
+ 
+.parent {
+
+
+    display: flex;
+    height: 390px;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
     width: 300px;
-    border: 3px solid rgb(110, 110, 211);
+    /* border: 3px solid rgb(110, 110, 211); */
     border-radius: 20px; 
     background-color: rgb(177, 191, 236);
-    padding: 30px 30px 30px 30px;
+    padding: 30px;
     box-sizing: border-box;
     box-shadow: 5px 5px 20px rgb(212, 166, 255);
+    font-size: 18px;
+    margin: 0;
 }
+
+.grid-2 {
+   display: grid;
+   grid-template-columns: repeat(2, 400px);
+   gap: 24px;
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+.card {
+    text-align: center;
+    background-color: rgb(219, 221, 253);
+    border: 2px dotted rgb(135, 136, 135);
+    box-sizing: border-box;
+    padding: 16px;
+    
+}
+
+.card-1 {
+    color: rgb(45, 70, 56);
+    text-align: center;
+    background-color: rgb(138, 155, 136);
+    border: 10px groove rgb(135, 136, 135);
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+/* table {
+    border: 1px solid black;
+} */
+
+.quote {
+    font-size: 20px;
+}
+.quote::before {
+    content: '"';
+    font-size: 40px;
+    color: rgb(167, 83, 83);
+}
+.quote::after {
+    content: '"';
+    font-size: 40px;
+    color: rgb(167, 83, 83);
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+td {
+    color: rgb(201, 217, 231);
+}
+
+
+label {
+    display: inline-block;
+    width: 70px;
+}
+
+input {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
